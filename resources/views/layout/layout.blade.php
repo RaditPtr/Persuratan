@@ -68,14 +68,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('transaksi/surat') }}">Transaksi Surat</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ url('/logout') }}" tabindex="-1">Logout</a>
-                    </li>
+                    </li> --}}
                 </ul>
-                <form class="d-flex">
+                <div class="d-flex">
+                    <button class="btn btn-secondary" href="{{ url('/logout') }}">Logout</button>
+                </div>
+                {{-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> --}}
             </div>
         </div>
     </nav>
